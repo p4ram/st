@@ -6,9 +6,13 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "mono:pixelsize=14:antialias=true:autohint=true"; */
-static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
+
+/* disable bold and italic font styles */
+int disablebold = 0;
+int disableitalic = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:

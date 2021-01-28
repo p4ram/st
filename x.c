@@ -266,6 +266,10 @@ static char *opt_title = NULL;
 
 static int oldbutton = 3; /* button event on startup: 3 = release */
 
+/* declared in config.h */
+extern int disablebold;
+extern int disableitalic;
+
 void
 clipcopy(const Arg *dummy)
 {
@@ -1360,13 +1364,15 @@ xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len, int x
 			frcflags = FRC_NORMAL;
 			runewidth = win.cw * ((mode & ATTR_WIDE) ? 2.0f : 1.0f);
 			if ((mode & ATTR_ITALIC) && (mode & ATTR_BOLD)) {
-				font = &dc.ibfont;
+				if (!disableitalic && !disablebold) font = &dc.ibfont;
+				if (disableitalic && !disablebold) font = &dc.bfont;
+				if (!disableitalic && disablebold) font = &dc.ifont;
 				frcflags = FRC_ITALICBOLD;
 			} else if (mode & ATTR_ITALIC) {
-				font = &dc.ifont;
+				if (!disableitalic) font = &dc.ifont;
 				frcflags = FRC_ITALIC;
 			} else if (mode & ATTR_BOLD) {
-				font = &dc.bfont;
+				if (!disablebold) font = &dc.bfont;
 				frcflags = FRC_BOLD;
 			}
 			yp = winy + font->ascent + win.cyo;
