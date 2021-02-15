@@ -6,13 +6,13 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "mono:pixelsize=14:antialias=true:autohint=true"; */
-static char *font = "xos4 Terminus:pixelsize=16:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Medium:style=Medium:pixelsize=16:antialias=true:autohint=true";
 /* static char *font = "scientifica:pixelsize=12:antialias=true:autohint=true"; */
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /* disable bold and italic font styles */
-int disablebold = 1;
+int disablebold = 0;
 int disableitalic = 1;
 
 /*
