@@ -6,9 +6,9 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "mono:pixelsize=14:antialias=true:autohint=true"; */
-static char *font = "JetBrains Mono Medium:style=Medium:pixelsize=18:antialias=true:autohint=true";
+static char *font = "UbuntuMono Nerd Font Mono:pixelsize=22:antialias=true:autohint=true";
 /* static char *font = "scientifica:pixelsize=12:antialias=true:autohint=true"; */
-static char *font2[] = {"Ubuntu Mono derivative Powerline:pixelsize=10:antialias=true:autohint=true"};
+static char *font2[] = {"Hack Nerd Font:pixelsize=15:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /* disable bold and italic font styles */
@@ -136,7 +136,7 @@ static const char *colorname[] = {
 	"#ebdbb2",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#a89984", /* 256 -> cursor */
+	"#83a598", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	"#282828", /* 258 -> bg */
 	"#ebdbb2", /* 259 -> fg */
