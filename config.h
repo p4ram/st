@@ -12,8 +12,8 @@ static char *font2[] = {"Hack Nerd Font:pixelsize=15:antialias=true:autohint=tru
 static int borderpx = 2;
 
 /* disable bold and italic font styles */
-int disablebold = 0;
-int disableitalic = 1;
+int disablebold = 1;
+int disableitalic = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
