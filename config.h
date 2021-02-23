@@ -6,9 +6,9 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "mono:pixelsize=14:antialias=true:autohint=true"; */
-static char *font = "JetBrains Mono Medium:style=Medium:pixelsize=16:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Medium:style=Medium:pixelsize=18:antialias=true:autohint=true";
 /* static char *font = "scientifica:pixelsize=12:antialias=true:autohint=true"; */
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font2[] = {"Ubuntu Mono derivative Powerline:pixelsize=10:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /* disable bold and italic font styles */
@@ -114,7 +114,7 @@ char *termname = "tmux-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -159,7 +159,7 @@ unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
