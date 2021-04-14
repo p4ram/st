@@ -6,9 +6,11 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char *font = "mono:pixelsize=14:antialias=true:autohint=true"; */
-static char *font = "UbuntuMono Nerd Font Mono:pixelsize=22:antialias=true:autohint=true";
+/* static char *font = "Ubuntu Mono:style=Regular:pixelsize=20:antialias=true:autohint=true"; */
 /* static char *font = "scientifica:pixelsize=12:antialias=true:autohint=true"; */
-static char *font2[] = {"Hack Nerd Font:pixelsize=15:antialias=true:autohint=true"};
+/* static char *font2[] = {"JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true"}; */
+static char *font = "Ubuntu Mono:pixelsize=20:antialias=true:autohint=true";
+static char *font2[] = { "UbuntuMono Nerd Font:pixelsize=20:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /* disable bold and italic font styles */
